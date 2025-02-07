@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencatatan Keuangan Pribadi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pencatatan Keuangan Pribadi</h1>
+      <div id="balance">Saldo: Rp 0</div>
+      <form id="transaction-form">
+        <input type="text" id="description" placeholder="Deskripsi" required />
+        <input type="number" id="amount" placeholder="Jumlah" required />
+        <button type="submit">Tambah Transaksi</button>
+      </form>
+      <ul id="transaction-list"></ul>
+    </div>
+    <audio id="click-sound" src="click-sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
